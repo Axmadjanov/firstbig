@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+#top {
+  width: 100%;
+  height: 5vh;
+  background-color: bisque;
+  position: relative;
+}
+#top a {
+  position: relative;
+  left: 70%;
+  top: 5px;
+  text-decoration: none;
+  color: #555;
+  padding-right: 20px;
+}
+/* #top a {
+  width: 100%;
+} */
+
+#top a:hover {
+  color: greenyellow;
+}
+
+#top a:hover .country {
+  /* display: inline-block; */
+  visibility: visible;
+  width: 300%;
+}
+.country {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100% 100% 100%;
+  grid-template-rows: 40vh 40vh;
+  visibility: hidden;
+  position: absolute;
+  top: 2rem;
+  left: 40px;
+}
+.country img {
+  position: relative;
+  right: 200%;
+  width: 100%;
+  height: 30vh;
+}
+.country img:active {
+  transform: translateY(0) scale(0.7);
+}
+.hover img:active {
+  transform: translateY(0) scale(0.7);
+}
+
+#top a:hover .hover {
+  /* display: inline-block; */
+  visibility: visible;
+  width: 300%;
+}
+.hover {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200% 200%;
+  grid-template-rows: 40vh 40vh;
+  visibility: hidden;
+  position: absolute;
+  top: 2rem;
+  left: 40px;
+}
+.hover img {
+  position: relative;
+  right: 200%;
+  width: 100%;
+  height: 40vh;
+}
+
+.nav {
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+}
+.nav h1 {
+  color: yellowgreen;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 50px;
+}
+
+.nav a {
+  text-decoration: none;
+  position: relative;
+  left: 50%;
+  bottom: 40px;
+  color: #555;
+  padding-left: 20px;
+  font-size: 20px;
+}
+.nav a:hover {
+  color: yellowgreen;
+}
+button {
+  position: relative;
+  left: 51%;
+  bottom: 6vh;
+  font-size: 20px;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  color: #fff;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+button:hover {
+  background-color: green;
+  transform: translateY(-5px);
+  box-shadow: 0 3px 7px #555;
+}
+button:active {
+  transform: translateY(0) scale(0.7);
+  box-shadow: none;
+}
+
+.item1 {
+  /* margin-top: 15vh; */
+  height: 80vh;
+  background-image: url(./ultrapictures/nature.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+.item1 h1 {
+  color: #fff;
+  position: relative;
+  top: 60vh;
+  left: 40px;
+}
+.item1 a {
+  position: relative;
+  top: 55vh;
+  left: 40px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(12, 240, 99);
+  transition: all 0.4s ease;
+}
+
+.item1 a:hover {
+  background-color: green;
+  color: #fff;
+}
+.grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+}
+
+/* .item2 {
+ width: 60%;
+} */
+
+.l {
+  height: 70vh;
+  margin: 10px 20px;
+  word-spacing: 20px;
+  box-shadow: 0 2px 2px 2px #555;
+  border-radius: 10px;
+  padding: 30px 20px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.l:hover {
+  transform: translateY(-5px);
+}
+
+.l span {
+  color: #fff;
+  font-size: 80px;
+  background-color: yellowgreen;
+  position: relative;
+  top: 30px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.h1 {
+  text-align: center;
+}
+.escape {
+  height: 60vh;
+  margin: 10px 20px;
+  word-spacing: 20px;
+  box-shadow: 0 2px 2px 2px #555;
+  border-radius: 10px;
+  padding: 50px 20px;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+.escape h2 {
+  color: yellowgreen;
+  padding-bottom: 20px;
+}
+.escape:hover {
+  transform: translateY(-5px);
+}
+.visit {
+  height: 70vh;
+  margin: 30px 20px;
+  word-spacing: 20px;
+  box-shadow: 0 2px 2px 2px #555;
+  border-radius: 10px;
+  padding: 50px 20px;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+.visit h2 {
+  color: yellowgreen;
+  padding-bottom: 20px;
+}
+.visit:hover {
+  transform: translateY(-5px);
+}
+.air {
+  height: 70vh;
+  margin: 80px 20px;
+  word-spacing: 20px;
+  box-shadow: 0 2px 2px 2px #555;
+  border-radius: 10px;
+  padding: 50px 20px;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+.air h2 {
+  color: yellowgreen;
+  padding-bottom: 20px;
+}
+.air:hover {
+  transform: translateY(-5px);
+}
+
+/* .item21 {
+  width: 40%;
+  position: fixed;
+  top: 15px;
+  right: 0px;
+} */
+.item21 h1 {
+  color: yellowgreen;
+  padding-top: 20px;
+}
+.item21 input {
+  width: 80%;
+  padding: 10px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  background-color: rgb(240, 234, 240);
+}
+.item21 a {
+  color: #555;
+  text-decoration: none;
+}
+.item21 a:hover {
+  color: yellowgreen;
+}
+.item3 {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  align-content: space-between;
+  justify-content: space-evenly;
+}
+
+.item3 h1 {
+  font-size: 50px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+.item3 a {
+  box-shadow: 0 2px 2px 2px #555;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+}
+.item3 a:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* .item3:active {
+  transform: translateY(0) scale(0.7);
+  box-shadow: none;
+} */
+.item3 p {
+  font-size: 20px;
+  text-align: center;
+  padding-top: -10px;
+}
+
+img {
+  width: 100%;
+  height: 30vh;
+}
+.item4 {
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+  padding: 20px 100px;
+}
+.item4 i {
+  padding-top: 30px;
+  font-size: 100px;
+  color: yellowgreen;
+}
+.item5 {
+  width: 100%;
+  height: 75vh;
+  background-color: rgb(209, 198, 178);
+}
+.item5 h1 {
+  color: yellowgreen;
+  position: relative;
+  left: 7%;
+  top: 10%;
+}
+table {
+  position: relative;
+  left: 20%;
+}
+th {
+  color: yellowgreen;
+  padding: 20px 50px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: green;
+}
+td {
+  padding: 10px 0;
+  position: relative;
+  left: 50px;
+}
+.icon {
+  color: #fff;
+  position: relative;
+  left: 80%;
+  bottom: 40%;
+  font-size: 30px;
+}
+.icon i {
+  /* border: 1px solid yellowgreen; */
+  padding: 15px;
+  border-radius: 50%;
+  background-color: yellowgreen;
+}
+.icon i:hover {
+  color: green;
+}
+.href {
+  position: relative;
+  top: 30%;
+  left: 5%;
+}
+.href a {
+  color: #fff;
+  font-size: 12px;
+  padding: 0 10px;
+}
+.href a:hover {
+  color: green;
+}
+.copy {
+  color: yellowgreen;
+  position: relative;
+  left: 85%;
+  top: 30px;
+}
+.nav2 i {
+  position: fixed;
+  /* top: 20px; */
+  bottom: 40px;
+  color: #555;
+  transform: rotate(90deg);
+  font-size: 50px;
+  opacity: 0.3;
+}
+.nav2 i:hover {
+  color: yellowgreen;
+  opacity: 1;
+}
+
+.nav2 a {
+  position: relative;
+  left: 90%;
+}
